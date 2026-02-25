@@ -1,6 +1,6 @@
 {
   "name": "cc-account-switcher",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "CLI tool for switching between Claude CLI accounts",
   "type": "module",
   "main": "dist/index.js",

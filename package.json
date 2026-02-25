@@ -1,6 +1,6 @@
 {
   "name": "claude-account-switcher",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI tool for switching between Claude CLI accounts",
   "type": "module",
   "main": "dist/index.js",

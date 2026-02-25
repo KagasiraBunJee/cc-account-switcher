@@ -5,7 +5,7 @@ set -euo pipefail
 # Usage: bash install.sh
 
 INSTALL_DIR="${CAS_INSTALL_DIR:-$HOME/.cas-cli}"
-REPO_URL="https://github.com/KagasiraBunJee/claude-account-switcher.git"
+REPO_URL="https://github.com/KagasiraBunJee/cc-account-switcher.git"
 
 # Colors
 RED='\033[0;31m'
@@ -57,7 +57,7 @@ fi
 
 # Check if this script is running from within the project directory
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-if [[ -f "$SCRIPT_DIR/package.json" ]] && grep -q '"claude-account-switcher"' "$SCRIPT_DIR/package.json" 2>/dev/null; then
+if [[ -f "$SCRIPT_DIR/package.json" ]] && grep -q '"cc-account-switcher"' "$SCRIPT_DIR/package.json" 2>/dev/null; then
   info "\nInstalling from local source: $SCRIPT_DIR"
   INSTALL_DIR="$SCRIPT_DIR"
 else

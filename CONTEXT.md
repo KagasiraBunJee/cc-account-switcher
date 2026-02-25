@@ -20,7 +20,7 @@ Not yet tested end-to-end with actual account switching (only build + CLI output
 ## Project Structure
 ```
 cas/
-  package.json          # claude-account-switcher, ESM, bin → ./bin/cas.js
+  package.json          # cc-account-switcher, ESM, bin → ./bin/cas.js
   tsconfig.json         # ES2022, bundler resolution
   tsup.config.ts        # ESM build, target node20
   install.sh            # Local installer (preflight checks, npm install/build/link)

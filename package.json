@@ -1,5 +1,5 @@
 {
-  "name": "claude-account-switcher",
+  "name": "cc-account-switcher",
   "version": "1.0.3",
   "description": "CLI tool for switching between Claude CLI accounts",
   "type": "module",
@@ -41,11 +41,11 @@
   "author": "KagasiraBunJee",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KagasiraBunJee/claude-account-switcher.git"
+    "url": "git+https://github.com/KagasiraBunJee/cc-account-switcher.git"
   },
-  "homepage": "https://github.com/KagasiraBunJee/claude-account-switcher#readme",
+  "homepage": "https://github.com/KagasiraBunJee/cc-account-switcher#readme",
   "bugs": {
-    "url": "https://github.com/KagasiraBunJee/claude-account-switcher/issues"
+    "url": "https://github.com/KagasiraBunJee/cc-account-switcher/issues"
   },
   "engines": {
     "node": ">=20"

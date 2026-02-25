@@ -15,8 +15,8 @@ Claude CLI stores OAuth credentials in the macOS Keychain and account metadata i
 ## Installation
 
 ```bash
-git clone https://github.com/KagasiraBunJee/claude-account-switcher.git
-cd claude-account-switcher
+git clone https://github.com/KagasiraBunJee/cc-account-switcher.git
+cd cc-account-switcher
 bash install.sh
 ```
 
@@ -29,8 +29,8 @@ The installer will:
 ### Manual Installation
 
 ```bash
-git clone https://github.com/KagasiraBunJee/claude-account-switcher.git
-cd claude-account-switcher
+git clone https://github.com/KagasiraBunJee/cc-account-switcher.git
+cd cc-account-switcher
 npm install
 npm run build
 npm link
@@ -96,7 +96,7 @@ This runs `cas switch work` before launching Claude.
 ## Uninstall
 
 ```bash
-npm unlink -g claude-account-switcher
+npm unlink -g cc-account-switcher
 rm -rf ~/.cas
 rm -f ~/.claude-*.json
 ```

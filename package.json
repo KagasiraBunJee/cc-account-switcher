@@ -1,0 +1,69 @@
+{
+  "name": "claude-account-switcher",
+  "version": "1.0.0",
+  "description": "CLI tool for switching between Claude CLI accounts",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "cas": "./bin/cas.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "clean": "rm -rf dist",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run clean && npm run build",
+    "prepack": "npm run build",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish"
+  },
+  "keywords": [
+    "claude",
+    "claude-cli",
+    "cli",
+    "account-switcher",
+    "profile-manager",
+    "oauth",
+    "macos",
+    "keychain"
+  ],
+  "files": [
+    "dist",
+    "bin",
+    "shell",
+    "LICENSE",
+    "README.md"
+  ],
+  "license": "MIT",
+  "author": "KagasiraBunJee",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KagasiraBunJee/claude-account-switcher.git"
+  },
+  "homepage": "https://github.com/KagasiraBunJee/claude-account-switcher#readme",
+  "bugs": {
+    "url": "https://github.com/KagasiraBunJee/claude-account-switcher/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "os": [
+    "darwin"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  }
+}
